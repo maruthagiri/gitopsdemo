@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "maruthagiri" --password-stdin
-        docker image build -t maruthagiri/pyflask:latest .
-        docker push maruthagiri/pyflask:latest
+        docker image build -t maruthagiri/websw:latest .
+        docker push maruthagiri/websw:latest
